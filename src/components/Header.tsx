@@ -26,8 +26,9 @@ export default function Header() {
   return (
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-cream/95 backdrop-blur-md shadow-sm py-3' : 'bg-transparent py-5'}`}>
       <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-        <Link href="/" className="flex items-center group py-1">
+        <Link href="/" className="flex items-center gap-3 group py-1">
           <Image src="/logo.png" alt="Didi's Cleaning Logo" width={220} height={80} style={{ width: "auto" }} className="h-12 md:h-16 w-auto object-contain group-hover:scale-105 transition-transform duration-300" priority />
+          <span className="font-heading font-bold text-xl md:text-2xl text-primary tracking-tight group-hover:text-orange transition-colors">Didi's Cleaning</span>
         </Link>
 
         {/* Desktop Nav */}

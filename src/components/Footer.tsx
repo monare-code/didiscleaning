@@ -9,8 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-16">
           
           <div className="md:col-span-1">
-            <Link href="/" className="inline-block mb-6 group">
+            <Link href="/" className="inline-flex items-center gap-3 mb-6 group">
               <Image src="/logo.png" alt="Didi's Cleaning Logo" width={220} height={80} style={{ width: "auto" }} className="h-16 md:h-20 w-auto object-contain brightness-0 invert opacity-90 group-hover:opacity-100 transition-opacity" />
+              <span className="font-heading font-bold text-2xl text-cream tracking-tight group-hover:text-orange transition-colors">Didi's Cleaning</span>
             </Link>
             <p className="text-sm mb-6 max-w-xs">
               Premium, hassle-free cleaning for discerning clients. We bring the supplies, you enjoy the pristine results.
